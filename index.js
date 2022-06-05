@@ -36,6 +36,6 @@ function sumarVal(p) {
 function mostrarPagoIndiv() {
   resultado.innerText = `TOTAL: ${sumarVal(pagos)} 
                         A cada uno le toca aportar: $${
-                          sumarVal(pagos) / nombres.length
+                          (sumarVal(pagos) / nombres.length).toFixed(2)
                         } `;
 }
